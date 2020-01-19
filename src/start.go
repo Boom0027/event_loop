@@ -9,11 +9,12 @@ import (
 // Start - start of the program
 func Start() {
 	fmt.Println("Hello")
-	lib.SetTimeout(1000, func() {
-		fmt.Println("Anything")
-		lib.SetTimeout(1000, func() {
-			fmt.Println("Something else")
+	for i := 0; i < 1000000; i++ {
+		j := i
+		lib.SetTimeout(0, func() {
+			fmt.Println(j, "Sup")
 		})
-	})
+	}
+
 	fmt.Println("World")
 }
