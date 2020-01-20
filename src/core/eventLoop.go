@@ -40,7 +40,14 @@ func EventLoop(cbChan chan CbFuncAndData, endChan <-chan bool, c *int64, dc func
 	}
 }
 
+// Check if the tasks have finished. If they have finished close the call back channel
 func checkIfFinished(c *int64, cbChan chan CbFuncAndData, endChan <-chan bool) {
+	// Step 1: Initial check if there are no async tasks to check
+	if *c == 0 {
+		close(cbChan)
+	}
+
+	// Step 2: Wait on end channel and close the main channel, if end channel receives end req
 	res := <-endChan
 	if res {
 		close(cbChan)
