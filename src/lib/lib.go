@@ -3,7 +3,7 @@ package lib
 import (
 	"sync/atomic"
 
-	"github.com/tirthamoulib/event_loop/src/core"
+	"github.com/tirthamouli/event_loop/src/core"
 )
 
 var cbChan = make(chan core.CbFuncAndData)
