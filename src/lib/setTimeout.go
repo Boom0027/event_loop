@@ -3,7 +3,7 @@ package lib
 import (
 	"time"
 
-	"github.com/tirthamouli/event_loop/src/core"
+	"github.com/Boom0027/event_loop/src/core"
 )
 
 // SetTimeout - sets a timeout for the given miliseconds

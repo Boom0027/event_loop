@@ -3,7 +3,7 @@ package src
 import (
 	"fmt"
 
-	"github.com/tirthamouli/event_loop/src/lib"
+	"github.com/Boom0027/event_loop/src/lib"
 )
 
 func createTimeLoop(num int) {

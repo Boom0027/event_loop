@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/tirthamouli/event_loop/src"
-	"github.com/tirthamouli/event_loop/src/lib"
+	"github.com/Boom0027/event_loop/src"
+	"github.com/Boom0027/event_loop/src/lib"
 )
 
 func main() {
